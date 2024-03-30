@@ -1,38 +1,71 @@
-.App {
+*{
+  margin:0;
+  padding: 0;
+}
+.header{
+  height: 54px;
+  background-color: aquamarine;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list{
+  display:  flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  /* justify-content: center; */
+  align-items: center;
+  /* margin: 20px 0 20px 10px; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list li{
+  text-decoration: none;
+  list-style: none;
+  margin: 20px 0 20px 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile_img img{
+  height: 50px !important;
+  width: 50px !important;
+  margin-right: 20px !important;
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+/* home page css */
+.home_page{
+  margin-top: 20px !important;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+  width: 100%;
+  /* background-color: blueviolet; */
+  text-align: center;
+}
+/* login css */
+.login_page{
+  background-color: bisque;
+}
+.login_form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  margin: auto;
+}
+.login_form input{
+  padding: 10px;
+}
+.label{
+  display: flex;
+  flex-direction: column;
+}
+.button button{
+  background-color: blue;
+  border-radius: 5px;
+  padding: 5px 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page_details{
+background-color: azure;
+text-align: center;
+padding-top: 20px;
 }
